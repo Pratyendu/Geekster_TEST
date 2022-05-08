@@ -1,0 +1,175 @@
+/* navbar section */
+.navbar {
+    position: fixed;
+    top: 0%;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 8px rgb(0 0 0 /6%);
+  }
+  ul {
+    list-style-type: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    margin-top: 0%;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    padding: 25px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* banner section */
+  .container {
+    width: 100%;
+    margin: 2% 0%;
+    padding: 6% 0%;
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: #dcdfb7;
+  }
+  
+  .banner .image img {
+    width: 70%;
+  }
+  
+  .banner .content {
+    font-family: "Lato", sans-serif;
+    padding: 6% 0%;
+  }
+  
+  .banner .content .title {
+    font-size: 50px;
+  }
+  .banner .content .title span {
+    font-weight: 800;
+  }
+  
+  .banner .content .desc {
+    font-size: 26px;
+  }
+  
+  .banner .content .btn {
+    background-color: #6b8363;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2% 5%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+  }
+  
+  /* about me section */
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  .about .image img {
+    width: 80%;
+  }
+  
+  .about .content {
+    font-family: "Lato", sans-serif;
+    padding: 20% 13%;
+  }
+  
+  .about .content .title {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .about .content .desc {
+    font-size: 19px;
+  }
+  .skills .content .title{
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-size: 28px;
+    font-weight: 700;
+     }
+  .skills .content .names{
+      display: grid;
+      grid-template-columns: repeat(4,25%);
+      padding: 5% 10%;
+  }   
+  .skills .content .names img{
+      width: 10%;
+      padding: 5px;
+      
+  }
+  .skills{
+      background-color: #dcdfb7;
+  }
+  .skills .content .names div{
+      background-color: white;
+      margin-right: 10px;
+      border-radius: 5px 5px 5px 5px;
+      box-shadow: 0px 3px 0px #6b8363;
+  }
+  a{
+      text-decoration: none;
+      color: #6b8363;
+  }
+
+  /* contact-section */
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .contact .image img {
+    width: 80%;
+  }
+  
+  .contact .content {
+    font-family: "Lato", sans-serif;
+    padding: 10% 13%;
+  }
+  
+  .contact .content .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0%;
+  }
+  
+  .contact .content .form {
+    padding: 2% 0%;
+  }
+  
+  .contact .content .form .field {
+    padding: 2% 0%;
+  }
+  
+  .contact .content .form .title {
+    font-size: 16px;
+  }
+  .contact .content .form .input {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    width: 55%;
+    padding: 2% 2%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 2%;
+  }
+  
+  .contact .content .btn {
+    background-color: #6b8363;
+    color: #fff;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2% 10%;
+    margin-top: 3%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
