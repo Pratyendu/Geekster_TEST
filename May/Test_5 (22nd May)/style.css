@@ -22,6 +22,14 @@ body {
     width: var(--off-canvas-width);
 }
 
+.dropdown-item{
+           font-size: x-small;
+}
+
+.container-main{
+    margin-top: var(--topNavbarHeight);
+}
+
 @media (min-width: 992px) {
     body {
         overflow: auto !important;
@@ -42,4 +50,5 @@ body {
     main{
         margin-left: var(--off-canvas-width);
     }
+    
 }
