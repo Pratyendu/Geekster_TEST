@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+
+:root {
+    --off-canvas-width: 270px;
+    --topNavbarHeight: 56px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.offcanvas {
+    background-color: #4e73df;
+    color: #fff;
+}
+
+.sidebar-nav {
+    width: var(--off-canvas-width);
+}
+
+.divider {
+    width: var(--off-canvas-width);
+}
+
+@media (min-width: 992px) {
+    body {
+        overflow: auto !important;
+    }
+
+
+    .sidebar-nav {
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+    }
+
+    .offcanvas-backdrop.show {
+        display: none;
+    }
+
+    main{
+        margin-left: var(--off-canvas-width);
+    }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">ADMIN PANEL</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="d-flex ms-auto">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2"><i
+                                class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                <div class="btn-group">
+                    <button type="button" class="btn  dropdown-toggle mb-2 mb-lg-2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-person-plus-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Nav -->
+
+    <div class="offcanvas sidebar-nav offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        
+        <div class="offcanvas-body p-0">
+            <nav class="navbar navbar-light">
+                <ul class="navbar-nav">
+                    <li>
+                        <div class="px-3 my-3">
+                            CORE
+                        </div>    
+
+                    </li>
+
+                    <li>
+                        <a href="" class="nav-link text-white px-3 fw-light">
+                            <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="divider">
+                        <hr class="dropdown-divider ">
+                    </li>
+
+                    <li>
+                        <div class="px-3 my-3">
+                            INTERFACE
+                        </div>    
+
+                    </li>
+
+                    <li class="px-5">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                                <span>Layouts</span>
+                            </button>
+                            <ul class="dropdown-menu bg-primary text-white" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" href="#"> 
+                                        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                                      <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                         </div>
+
+                    </li>
+
+                    <li>
+                         <a href="" class="nav-link text-white px-3 fw-light">
+                            <span class="me-2"><i class="bi bi-book"></i></span>
+                            <span>Pages</span>
+                        </a>
+                    </li>
+
+                    <li class="divider">
+                        <hr class="dropdown-divider ">
+                    </li>
+
+                     <li>
+                        <div class="px-3 my-3">
+                            ADDONS
+                        </div>    
+
+                    </li>
+
+                    <li>
+                         <a href="" class="nav-link text-white px-3 fw-light">
+                            <span class="me-2"><i class="bi bi-graph-up-arrow"></i></span>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+
+                    <li>
+                         <a href="" class="nav-link text-white px-3 fw-light">
+                            <span class="me-2"><i class="bi bi-table"></i></span>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+                
+            </nav>
+           
+        </div>
+    </div>
+
+    <main class="mt-3 pt-3">
+    <div class="container-fluid">
+        <!-- Dashboard Title -->
+        <div class="row">
+            <div class="col-12">
+                <h4>  Dashboard  </h4>
+            </div> 
+        </div>
+
+        <!-- Cards -->
+
+        <div class="row ">
+            <div class="col-md-3">
+                <div class="card shadow border-warning">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-warning">Earnings (Monthly)</div>
+                                <div>$50,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow border-info">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-info">Weekly Sales</div>
+                                <div>$20,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow border-primary">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-primary">Earnings</div>
+                                <div>$90,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow border-success">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-success">Market Share</div>
+                                <div>$30,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                       <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span> 
+                       AreaChartExample
+                    </div>
+                    <div class="card-body">
+                        <canvas id="myChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                       <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span> 
+                       AreaChartExample
+                    </div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
