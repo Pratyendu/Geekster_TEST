@@ -1,9 +1,9 @@
-let count = 0;
-let limit = 5;
-let n = 11;
-for (count = 1; count <= limit; count++) {
-  for (let i = 1; i <= n; i++) {
-    if (checkPrime(i)) {
+let n = parseInt(prompt("Enter nth  prime number.:"));
+let ctr = 0;
+for (let i = 1; i <= 1000; i++) {
+  if (checkPrime(i)) {
+    ctr++;
+    if (ctr === n) {
       console.log(i);
     }
   }
