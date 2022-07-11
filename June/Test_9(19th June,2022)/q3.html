@@ -3,24 +3,7 @@
 
 <head>
     <title>Question 3</title>
-    <script>
 
-
-        var city = ['Delhi', 'Mumbai', 'Jaipur', 'Kolkata', 'Indore'];
-        var olRef = document.getElementById('olRef');
-        city.forEach((item) => {
-            var li = document.createElement('li')
-            li.innerText = item
-            olRef.appendChild(li)
-
-
-        });
-
-
-
-
-
-    </script>
 </head>
 
 <body>
@@ -29,6 +12,24 @@
 
         </ol>
     </div>
+
+    <script>
+
+
+        var city = ['Delhi', 'Mumbai', 'Jaipur', 'Kolkata', 'Indore'];
+
+        city.map(function (ele) {
+            var liRef = document.createElement("li")
+            var olRef = document.getElementById('olRef')
+
+            liRef.innerHTML = ele
+            olRef.appendChild(liRef)
+
+        })
+
+
+
+    </script>
 </body>
 
 </html>
