@@ -3,11 +3,21 @@ package com.test.Restaurant.model;
 public class Restaurant {
     private String name;
     private String location;
-    private int number;
+    private long number;
     private String cuisine;
     private int totalStaff;
     private double rating;
     private int budget;
+
+    public Restaurant(String name, String location, long number, String cuisine, int totalStaff, double rating, int budget) {
+        this.name = name;
+        this.location = location;
+        this.number = number;
+        this.cuisine = cuisine;
+        this.totalStaff = totalStaff;
+        this.rating = rating;
+        this.budget = budget;
+    }
 
     public String getName() {
         return name;
@@ -25,11 +35,11 @@ public class Restaurant {
         this.location = location;
     }
 
-    public int getNumber() {
+    public long getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(long number) {
         this.number = number;
     }
 

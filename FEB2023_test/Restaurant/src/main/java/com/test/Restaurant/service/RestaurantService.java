@@ -10,6 +10,10 @@ import java.util.List;
 public class RestaurantService {
     private static List<Restaurant> restaurants = new ArrayList<>();
 
+    static{
+        restaurants.add(new Restaurant("Beijing", "China Town" , 784949456,"Chinese",100,4.6,1000));
+    }
+
     public void addRestaurant(Restaurant restaurant){
         restaurants.add(restaurant);
     }
@@ -19,7 +23,7 @@ public class RestaurantService {
 
     public Restaurant findByName(String name){
         for(Restaurant search : restaurants){
-            if(search.getName() == name) return search;
+            if(search.getName().equals(name)) return search;
         }
         return null;
     }
