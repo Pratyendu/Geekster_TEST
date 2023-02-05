@@ -34,5 +34,17 @@ public class RestaurantService {
         }
     }
 
+    public void updateRestaurant(String name , Restaurant newRestaurant){
+        Restaurant search = findByName(name);
+
+        search.setName(newRestaurant.getName());
+        search.setLocation(newRestaurant.getLocation());
+        search.setNumber(newRestaurant.getNumber());
+        search.setCuisine(newRestaurant.getCuisine());
+        search.setBudget(newRestaurant.getBudget());
+        search.setTotalStaff(newRestaurant.getTotalStaff());
+        search.setRating(newRestaurant.getRating());
+    }
+
 
 }
