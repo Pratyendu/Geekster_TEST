@@ -28,5 +28,11 @@ public class RestaurantService {
         return null;
     }
 
+    public void deleteRestaurant(String name){
+        for(int idx = 0 ; idx < restaurants.size() ; idx++){
+            if(restaurants.get(idx).getName().equals(name)) restaurants.remove(idx);
+        }
+    }
+
 
 }

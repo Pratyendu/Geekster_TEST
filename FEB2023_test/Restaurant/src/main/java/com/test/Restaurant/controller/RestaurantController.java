@@ -34,4 +34,9 @@ public class RestaurantController {
         return restaurantService.findByName(name);
     }
 
+    @DeleteMapping("/delete-restaurant/name/{name}")
+    public void deleteRestaurant(@PathVariable String name){
+        restaurantService.deleteRestaurant(name);
+    }
+
 }
