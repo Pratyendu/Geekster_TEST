@@ -18,14 +18,14 @@ public class UserController {
 
     @PostMapping("create-user")
     public ResponseEntity<String> createUser(@RequestBody User user){
-        userService.createUser(user);
-        return new ResponseEntity("User Created" , HttpStatus.CREATED);
+        int userId = userService.createUser(user);
+        return new ResponseEntity("User Created with id :" + userId , HttpStatus.CREATED);
     }
 
     @GetMapping("get-user-by-id/{userId}")
-    public ResponseEntity<String> getUserById(@PathVariable int userId){
-        userService.getUserById(userId);
-        return new ResponseEntity("User Fetched with id :" + userId , HttpStatus.FOUND);
+    public User getUserById(@PathVariable int userId){
+         return userService.getUserById(userId);
+
     }
 
 }

@@ -20,6 +20,6 @@ public class Address {
     private String zipcode;
     private String state;
     @JoinColumn(name = "user_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 }

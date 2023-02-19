@@ -15,13 +15,13 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @JoinColumn(name = "user_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private User user;
     @JoinColumn(name = "product_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Product product;
     @JoinColumn(name = "address_id")
-    @OneToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Address address;
     private int productQuantity;
 }
