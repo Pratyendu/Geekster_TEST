@@ -9,7 +9,7 @@ import java.sql.Date;
 import java.util.List;
 @Repository
 public interface StudentRepository extends JpaRepository<Student , Integer> {
-    @Query(value = "select * from tbl_student where firstName = :firstName and lastName = :lastName" , nativeQuery = true)
+    @Query(value = "select * from tbl_student where first_name = :firstName and last_name = :lastName" , nativeQuery = true)
     public List<Student> findByFirstNameAndLastName(String firstName , String lastName);
 //    public List<Student> findByFirstNameOrLastName(String firstName , String lastName);
 //    public List<Student> findByFirstNameIs(String firstName);
